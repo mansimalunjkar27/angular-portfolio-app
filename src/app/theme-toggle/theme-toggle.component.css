@@ -19,7 +19,7 @@
 .icon::before {
   content: '☀️'; /* sun by default */
   font-size: 20px;
-  background-color: #111111;
+  /* background-color: #111111; */
   color: #ffffff;
 }
 .icon.dark::before {
