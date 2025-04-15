@@ -39,7 +39,9 @@ a {
     font-size: 20px;
   } */
 
-
+  * {
+    box-sizing: border-box;
+  }
 
 /* Dark Theme */
 body.dark-theme #Ccolour {
@@ -278,12 +280,8 @@ html,
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
-  /* Disable horizontal scrolling */
-  overscroll-behavior: none;
-  /* Prevent browser swipe navigation */
-  touch-action: none;
-  /* Disable default touch interactions */
 }
 
 /* Ensure the container fits within the screen width */
@@ -309,6 +307,7 @@ body,
 .container {
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Fix for ensuring screen fit */

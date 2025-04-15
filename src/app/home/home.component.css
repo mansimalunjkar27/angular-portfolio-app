@@ -82,8 +82,6 @@ body {
   height: 100%;
   margin: 0;
   height: 0;
-  overscroll-behavior: none;   /* Prevent browser swipe navigation */
-  touch-action: none;          /* Disable default touch interactions */
 }
 
 @keyframes blink-caret {

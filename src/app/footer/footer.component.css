@@ -39,10 +39,10 @@
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 2.5px;
     display: block;
     margin-top: 5px;
-    right: 0;
+    right: 1;
     background: #00FF00;
     transition: width 0.3s ease, background-color 0.3s ease;
   }
@@ -61,6 +61,11 @@
   /* Font Awesome Icons */
   .fab,
   .fas {
-    font-size: 24px;
+    font-size: 22px;
   }
   
+  html,body{
+height: 100%;
+margin: 0;
+padding: 0;
+  }
