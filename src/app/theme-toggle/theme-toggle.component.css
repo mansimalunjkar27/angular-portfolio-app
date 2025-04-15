@@ -1,0 +1,64 @@
+.theme-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Default styles */
+.icon::before {
+  content: '☀️'; /* sun by default */
+  font-size: 20px;
+  background-color: #111111;
+  color: #ffffff;
+}
+.icon.dark::before {
+  content: '☀️'; /* sun by default */
+  font-size: 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* If dark mode is active, show moon instead */
+.icon.light::before {
+  content: '🌙';
+  transform: scale(1.1);
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+body.dark-theme {
+  --text-color: #ffffff;
+  --bg-color: #111111;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

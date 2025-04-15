@@ -1,0 +1,26 @@
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background: #111; */
+  }
+  
+  canvas {
+    background: transparent;
+  }
+
+  
+  #tagsList a {
+    color: #00ffff; /* normal color */
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  #tagsList a:hover {
+    color: white !important;
+    background: none !important;
+  }
+  
+  
